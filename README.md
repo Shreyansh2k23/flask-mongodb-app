@@ -195,8 +195,8 @@ kubectl get hpa -n flask-mongo-ns
 kubectl get pods -n flask-mongo-ns
 
 ```
-![HPA Before Load](screenshots/hpa-before.png)
-![HPA After Load](screenshots/hpa-after.png)
+![HPA Before Load](screenshots/hpa-before.PNG)
+![HPA After Load](screenshots/hpa-after.PNG)
 
 
 (Describe what happened)
