@@ -229,5 +229,3 @@ Both cases are okay as long as you:
 7. Stop load, stop minikube (when done)
 ```
 ---
-
-If you want, you can paste **one final `kubectl get hpa` + `kubectl get pods` output after doing this**, and I’ll tell you exactly what to write in the README under “Autoscaling behaviour”.
