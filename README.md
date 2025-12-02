@@ -194,7 +194,7 @@ While the load was running, I repeatedly checked HPA and pods:
 kubectl get hpa -n flask-mongo-ns
 kubectl get pods -n flask-mongo-ns
 
-
+```
 ![HPA Before Load](screenshots/hpa-before.png)
 ![HPA After Load](screenshots/hpa-after.png)
 
@@ -219,7 +219,7 @@ Both cases are okay as long as you:
 ---
 
 ## 🔁 Quick recap of steps you need now
-
+```
 1. `minikube start`
 2. (Optional) re-enable metrics-server  
 3. **PS #2** – `kubectl port-forward service/flask-service 5000:5000 -n flask-mongo-ns`
@@ -227,7 +227,7 @@ Both cases are okay as long as you:
 5. **PS #4** – run `for ($i=0; $i -lt 30000; $i++) { curl.exe http://127.0.0.1:5000/ > $null }`
 6. While load runs, in PS #3: `kubectl get hpa` + `kubectl get pods` → Screenshot AFTER
 7. Stop load, stop minikube (when done)
-
+```
 ---
 
 If you want, you can paste **one final `kubectl get hpa` + `kubectl get pods` output after doing this**, and I’ll tell you exactly what to write in the README under “Autoscaling behaviour”.
